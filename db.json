@@ -1,0 +1,49 @@
+{
+    "codes": [
+        {
+            "id": 1, 
+            "name": "Home Wi-Fi", 
+            "qrcode": "code",
+            "image": "sampleimg", 
+            "description": "This QR code will fix all your problems", 
+            "url": "url"
+
+        },
+         {
+            "id": 2, 
+            "name": "Office Wi-Fi", 
+            "qrcode": "code",
+            "image": "sampleimg", 
+            "description": "This QR code will fix all your problems", 
+            "url": "url"
+
+        },
+        {
+            "id": 3, 
+            "name": "Business Website", 
+            "qrcode": "code",
+            "image": "sampleimg", 
+            "description": "This QR code will fix all your problems", 
+            "url": "url"
+
+        },
+        {
+            "id": 4, 
+            "name": "Twitter", 
+            "qrcode": "code",
+            "image": "sampleimg", 
+            "description": "This QR code will fix all your problems", 
+            "url": "url"
+
+        }, 
+        {
+            "id": 5, 
+            "name": "Venmo", 
+            "qrcode": "code",
+            "image": "sampleimg", 
+            "description": "This QR code will fix all your problems", 
+            "url": "url"
+
+        }
+    ]
+}
