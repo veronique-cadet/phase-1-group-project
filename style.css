@@ -1,2 +1,114 @@
-body { background-color: grey;}
-#image-detail { width: 200px;}
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Helvetica;
+}
+body {
+  background-color: 00000;
+}
+
+/* header */
+#header-container {
+  background-color: rgb(237, 244, 236);
+  margin: 0;
+  padding: 2rem;
+  padding-left: 5rem;
+}
+
+#header-title {
+  color: rgb(92, 171, 173);
+  font-size: 75px;
+  display: inline-block;
+  justify-self: center;
+}
+
+#wallet-icon {
+  display: inline-block;
+  width: 75px;
+  height: 75px;
+}
+
+/* wallet list */
+
+#wallet-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 3rem;
+  padding-bottom: 1rem;
+}
+
+.item-header {
+  padding-top: 4rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: 3rem;
+  color: rgb(92, 171, 173);
+}
+
+.items {
+  padding-bottom: 1rem;
+  font-weight: 700;
+  color: rgb(92, 171, 173);
+  font-size: 20px;
+}
+#item-list {
+  text-align: center;
+  padding-right: 20rem;
+}
+
+#item-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: 3rem;
+  color: rgb(92, 171, 173);
+}
+
+#image-detail {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  width: 400px;
+  padding-top: 2rem;
+}
+
+/* //form// */
+
+#form-div {
+  background-color: rgb(237, 244, 236);
+  color: rgb(92, 171, 173);
+  padding: 2rem;
+  justify-content: center;
+}
+
+#form {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#submit {
+  background-color: rgb(92, 171, 173);
+  color: rgb(237, 244, 236);
+  border-radius: 12px;
+  border: none;
+  margin-left: 2rem;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.form-text {
+  padding-left: 2rem;
+  font-size: 20px;
+  font-weight: 700;
+  padding-right: 1rem;
+}
+
+#form-title {
+  padding-bottom: 2.5rem;
+  text-align: center;
+  font-size: 2rem;
+}
