@@ -4,9 +4,78 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="index.js"></script>
     <title>QR QTs</title>
 </head>
 <body>
+    <header>
     <h1>QR Wallet</h1>
+    </header>
+
+    <main>
+<!-- wallet items div - to the left -->
+<div id="item-list">
+    <h3>My Wallet:</h3>
+    <!-- This is where we will be appending p tag items to the div of total items -->
+</div>
+<!-- selected item details - div - center of page -->
+<div id="item-details">
+<img src="https://blog.tcea.org/wp-content/uploads/2022/05/qrcode_tcea.org-1.png" alt="User QR Code" id="image-detail">
+
+</div>
+<!-- form: bottom of the page, inside a div --> 
+<div id="form">
+        <form id="form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="New Name...">
+            <br>
+            <label for="url">URL:</label>
+            <input type="text" id="url" name="url" placeholder="New URL...">
+            <br>
+            <label for="description">Description:</label>
+            <input type="text" id="description" name="description" placeholder="New Description...">
+            <br>
+            <input type="submit" id="submit" name="submit">
+        </form>
+    </div>
+    </main>
+
+    <footer>
+
+
+    </footer>
+    <!-- <header class="header">
+        <nav class="navigation">
+          <img
+            class="navigation-image"
+            src="/assets/Assets 2/coffee-beans-logo-and-footer.svg"
+            alt="coffee bean logo"
+          />
+          <h2 class="header__title">nitro</h2>
+          <ul class="navigation_list">
+            <li class="navigation__item">
+              <a class="navigation__link" href="/index.html">ABOUT</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="/Pages/menu.html">MENU</a>
+            </li>
+            <li class="navigation__item">
+              <a
+                class="navigation__link navigation__link--active"
+                href="/Pages/menu.html"
+                >SHOP NOW</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <div class="header-image">
+          <h1 class="header-image__menubox">MENU</h1>
+        </div>
+      </header> -->
+
+
+
+
 </body>
 </html>
