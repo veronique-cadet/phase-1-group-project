@@ -26,6 +26,7 @@ renderMainDetail = (item) => {
     description.className = "mouse";
     url.className = "mouse";
     description.innerText = item.description;
+
     url.innerText = item.url;
     itemName.addEventListener("mouseout", () => {
       description.textContent = "";
@@ -70,8 +71,3 @@ form.addEventListener("submit", (e) => {
   request();
 });
 
-// newUrl = (url) => {
-//     const imageDetail = document.getElementById("image-detail");
-//     imageDetail.src;
-//   console.log(newUrl);
-// };
