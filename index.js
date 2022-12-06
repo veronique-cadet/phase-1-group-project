@@ -1,6 +1,6 @@
 fetch("http://localhost:3000/codes")
-.then((resp) => resp.json())
-.then((qrCodes) => qrCodes.forEach(generateWallet));
+  .then((resp) => resp.json())
+  .then((qrCodes) => qrCodes.forEach(generateWallet));
 
 function generateWallet(qrCode) {
   const walletDiv = document.getElementById("item-list");
@@ -37,7 +37,7 @@ renderMainDetail = (item) => {
 
 const urlInput = document.getElementById("url");
 const nameInput = document.getElementById("name");
-const descriptionInput = document.getElementById("description")
+const descriptionInput = document.getElementById("description");
 const form = document.getElementById("form");
 
 form.addEventListener("submit", (e) => {
@@ -50,24 +50,23 @@ form.addEventListener("submit", (e) => {
     );
     //   let resp = await req.json()
     console.log(req);
-    console.log(req.url)
-    itemImage.src = req.url
+    console.log(req.url);
+    itemImage.src = req.url;
     const newQr = {
-      "name": nameInput.value,
-      "qrcode": req.url,
-      "image": req.url,
-      "description": descriptionInput.value,
-      "url": urlInput.value
-    }
-    fetch('http://localhost:3000/codes', {
-      method: 'POST',
+      name: nameInput.value,
+      qrcode: req.url,
+      image: req.url,
+      description: descriptionInput.value,
+      url: urlInput.value,
+    };
+    fetch("http://localhost:3000/codes", {
+      method: "POST",
       headers: {
-        'Content-Type': 'application/json'
+        "Content-Type": "application/json",
       },
-      body: JSON.stringify(newQr)
-    })
-    generateWallet(newQr)
+      body: JSON.stringify(newQr),
+    });
+    generateWallet(newQr);
   }
   request();
 });
-

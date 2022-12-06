@@ -2,3 +2,4 @@
 Rochelle
 Adam
 Hassan
+Veronique
