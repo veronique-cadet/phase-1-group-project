@@ -113,3 +113,9 @@ body {
   text-align: center;
   font-size: 2rem;
 }
+
+.mouse {
+  font-size: 12px;
+  background: rgb(92, 171, 173);
+  color: white;
+}
