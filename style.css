@@ -62,7 +62,7 @@ body {
   font-size: 1.5rem;
   font-weight: bold;
   text-align: center;
-  padding-bottom: 3rem;
+  padding-bottom: 1rem;
   color: rgb(92, 171, 173);
 }
 
@@ -115,7 +115,8 @@ body {
 }
 
 .mouse {
-  font-size: 12px;
+  font-size: 20px;
   background: rgb(92, 171, 173);
   color: white;
+  text-align: center;
 }

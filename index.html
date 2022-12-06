@@ -30,6 +30,8 @@
         <div id="item-details">
           <img src="/assets/962965.png" alt="User QR Code" id="image-detail" />
           <p id="item-name">Your QR Code Here</p>
+          <p id="item-description"></p>
+          <p id="item-url"></p>
         </div>
       </div>
       <!-- form: bottom of the page, inside a div -->
@@ -45,7 +47,6 @@
             id="url"
             name="url"
             placeholder="New URL..."
-            value="www.twitter.com"
           />
 
           <label class="form-text" for="description">Description:</label>
@@ -55,7 +56,7 @@
             name="description"
             placeholder="New Description..."
           />
-          <input type="submit" id="submit" name="submit" />
+          <input type="submit" id="submit" name="submit" value="Generate QR Code" />
         </form>
       </div>
     </main>
