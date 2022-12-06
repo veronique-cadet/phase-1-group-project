@@ -26,7 +26,7 @@ renderMainDetail = (item) => {
     description.className = "mouse";
     url.className = "mouse";
     description.innerText = item.description;
-    itemName.append(description, url);
+    itemName.append(description, urlDetail);
 
     description.innerText = item.description;
     url.innerText = item.url;
@@ -50,15 +50,7 @@ form.addEventListener("submit", (e) => {
     );
     //   let resp = await req.json()
     console.log(req);
-    console.log(req.url);
-    itemImage.src = req.url;
   }
   request();
 });
-//newcoment 
 
-// newUrl = (url) => {
-//     const imageDetail = document.getElementById("image-detail");
-//     imageDetail.src;
-//   console.log(newUrl);
-// };
