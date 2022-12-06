@@ -1,49 +1,44 @@
 {
-    "codes": [
-        {
-            "id": 1, 
-            "name": "Home Wi-Fi", 
-            "qrcode": "code",
-            "image": "sampleimg", 
-            "description": "This QR code will fix all your problems", 
-            "url": "url"
-
-        },
-         {
-            "id": 2, 
-            "name": "Office Wi-Fi", 
-            "qrcode": "code",
-            "image": "sampleimg", 
-            "description": "This QR code will fix all your problems", 
-            "url": "url"
-
-        },
-        {
-            "id": 3, 
-            "name": "Business Website", 
-            "qrcode": "code",
-            "image": "sampleimg", 
-            "description": "This QR code will fix all your problems", 
-            "url": "url"
-
-        },
-        {
-            "id": 4, 
-            "name": "Twitter", 
-            "qrcode": "code",
-            "image": "sampleimg", 
-            "description": "This QR code will fix all your problems", 
-            "url": "url"
-
-        }, 
-        {
-            "id": 5, 
-            "name": "Venmo", 
-            "qrcode": "code",
-            "image": "sampleimg", 
-            "description": "This QR code will fix all your problems", 
-            "url": "url"
-
-        }
-    ]
+  "codes": [
+    {
+      "id": 1,
+      "name": "Home Wi-Fi",
+      "qrcode": "code",
+      "image": "https://api.qrserver.com/v1/create-qr-code/?data=wifipassword&size=250x250",
+      "description": "This QR code will fix all your problems",
+      "url": "https://api.qrserver.com/v1/create-qr-code/?data=wifipassword&size=100x100"
+    },
+    {
+      "id": 2,
+      "name": "Office Wi-Fi",
+      "qrcode": "code",
+      "image": "https://api.qrserver.com/v1/create-qr-code/?data=officewifi&size=250x250",
+      "description": "This QR code will fix all your problems",
+      "url": "https://api.qrserver.com/v1/create-qr-code/?data=wifipassword&size=100x100"
+    },
+    {
+      "id": 3,
+      "name": "Flatiron School",
+      "qrcode": "code",
+      "image": "https://api.qrserver.com/v1/create-qr-code/?data=https://flatiron.com/&size=250x250",
+      "description": "This QR code will fix all your problems",
+      "url": "url"
+    },
+    {
+      "id": 4,
+      "name": "Twitter",
+      "qrcode": "code",
+      "image": "https://api.qrserver.com/v1/create-qr-code/?data=https://twitter.com/&size=250x250",
+      "description": "This QR code will fix all your problems",
+      "url": "https://api.qrserver.com/v1/create-qr-code/?data=www.twitter.com&size=250x250"
+    },
+    {
+      "id": 5,
+      "name": "Venmo",
+      "qrcode": "code",
+      "image": "https://api.qrserver.com/v1/create-qr-code/?data=https://venmo.com/&size=250x250",
+      "description": "This QR code will fix all your problems",
+      "url": "https://api.qrserver.com/v1/create-qr-code/?data=https://venmo.com/&size=250x250"
+    }
+  ]
 }
