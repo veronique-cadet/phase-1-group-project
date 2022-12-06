@@ -39,14 +39,6 @@
       "image": "https://api.qrserver.com/v1/create-qr-code/?data=https://venmo.com/&size=250x250",
       "description": "You can send me money here!",
       "url": "venmo.com"
-    },
-    {
-      "name": "Hello",
-      "qrcode": "https://api.qrserver.com/v1/create-qr-code/?data=World.com&size=250x250",
-      "image": "https://api.qrserver.com/v1/create-qr-code/?data=World.com&size=250x250",
-      "description": "This is the Descr.",
-      "url": "World.com",
-      "id": 6
     }
   ]
 }
