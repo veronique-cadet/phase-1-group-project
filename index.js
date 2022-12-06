@@ -55,6 +55,7 @@ form.addEventListener("submit", (e) => {
   }
   request();
 });
+//newcoment 
 
 // newUrl = (url) => {
 //     const imageDetail = document.getElementById("image-detail");
