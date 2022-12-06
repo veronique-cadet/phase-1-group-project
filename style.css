@@ -40,7 +40,7 @@ body {
 
 .item-header {
   padding-top: 3rem;
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: bold;
   text-align: center;
   padding-bottom: 3rem;
@@ -112,4 +112,10 @@ body {
   padding-bottom: 2.5rem;
   text-align: center;
   font-size: 2rem;
+}
+
+.mouse {
+  font-size: 12px;
+  background: rgb(92, 171, 173);
+  color: white;
 }
