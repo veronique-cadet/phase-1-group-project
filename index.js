@@ -48,7 +48,8 @@ form.addEventListener("submit", (e) => {
     let req = await fetch(
       `https://api.qrserver.com/v1/create-qr-code/?data=${urlInput}&size=100x100`
     );
-    itemImage.src = req.url;
+    //   let resp = await req.json()
+    console.log(req);
   }
   request();
 });
