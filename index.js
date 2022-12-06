@@ -66,6 +66,7 @@ form.addEventListener("submit", (e) => {
       },
       body: JSON.stringify(newQr),
     });
+    itemName.innerText = nameInput.value;
     generateWallet(newQr);
   }
   request();
