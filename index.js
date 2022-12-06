@@ -50,6 +50,8 @@ form.addEventListener("submit", (e) => {
     );
     //   let resp = await req.json()
     console.log(req);
+    console.log(req.url);
+    itemImage.src = req.url;
   }
   request();
 });
