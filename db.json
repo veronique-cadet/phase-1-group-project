@@ -4,7 +4,7 @@
       "id": 1,
       "name": "Home Wi-Fi",
       "qrcode": "code",
-      "image": "https://api.qrserver.com/v1/create-qr-code/?data=wifipassword&size=250x250",
+      "image": "https://api.qrserver.com/v1/create-qr-code/?data=wifipassword&size=250x250&color=168-169-173",
       "description": "This is my home wifi!",
       "url": "HomeWifiPW123456789"
     },
@@ -12,15 +12,15 @@
       "id": 2,
       "name": "Office Wi-Fi",
       "qrcode": "code",
-      "image": "https://api.qrserver.com/v1/create-qr-code/?data=officewifi&size=250x250",
+      "image": "https://api.qrserver.com/v1/create-qr-code/?data=officewifi&size=250x250&color=168-169-173",
       "description": "This is my office wifi!",
       "url": "OfficeWifiPW123456789"
     },
     {
       "id": 3,
-      "name": "Flatiron School",
+      "name": "Flatiron",
       "qrcode": "code",
-      "image": "https://api.qrserver.com/v1/create-qr-code/?data=https://flatironschool.com/&size=250x250",
+      "image": "https://api.qrserver.com/v1/create-qr-code/?data=https://flatironschool.com/&size=250x250&color=168-169-173",
       "description": "Website for my school!",
       "url": "flatironschool.com"
     },
@@ -28,7 +28,7 @@
       "id": 4,
       "name": "Twitter",
       "qrcode": "code",
-      "image": "https://api.qrserver.com/v1/create-qr-code/?data=https://twitter.com/&size=250x250",
+      "image": "https://api.qrserver.com/v1/create-qr-code/?data=https://twitter.com/&size=250x250&color=168-169-173",
       "description": "This is where I get my HQ news!",
       "url": "twitter.com"
     },
@@ -36,7 +36,7 @@
       "id": 5,
       "name": "Venmo",
       "qrcode": "code",
-      "image": "https://api.qrserver.com/v1/create-qr-code/?data=https://venmo.com/&size=250x250",
+      "image": "https://api.qrserver.com/v1/create-qr-code/?data=https://venmo.com/&size=250x250&color=168-169-173",
       "description": "You can send me money here!",
       "url": "venmo.com"
     }

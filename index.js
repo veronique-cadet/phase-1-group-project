@@ -2,13 +2,29 @@ fetch("http://localhost:3000/codes")
   .then((resp) => resp.json())
   .then((qrCodes) => qrCodes.forEach(generateWallet));
 
+const walletDiv = document.getElementById("item-list");
 function generateWallet(qrCode) {
-  const walletDiv = document.getElementById("item-list");
   const walletItem = document.createElement("p");
-  walletItem.className = "items";
+  walletItem.id = "items";
   walletDiv.append(walletItem);
   walletItem.innerText = qrCode.name.toUpperCase();
+
+  walletItem.addEventListener("mouseover", () => {
+    console.log("i worked");
+    walletItem.style.color = "white";
+  });
+
+  walletItem.addEventListener("mouseout", () => {
+    walletItem.style.color = "#4ea3c6";
+  });
+
+  // const deleteButton = document.createElement("img");
+  // walletItem.append(deleteButton);
+  // deleteButton.id = "delete";
+  // deleteButton.src = "assets/remove.png";
+
   walletItem.addEventListener("click", () => {
+    walletItem.style.color = "white";
     renderMainDetail(qrCode);
   });
 }
@@ -21,14 +37,14 @@ renderMainDetail = (item) => {
   itemName.innerText = item.name;
   itemImage.src = item.image;
 
-  itemName.addEventListener("mouseover", () => {
+  itemImage.addEventListener("mouseover", () => {
     console.log("hiiiii");
     description.className = "mouse";
     url.className = "mouse";
     description.innerText = item.description;
 
     url.innerText = item.url;
-    itemName.addEventListener("mouseout", () => {
+    itemImage.addEventListener("mouseout", () => {
       description.textContent = "";
       url.textContent = "";
     });
@@ -46,7 +62,7 @@ form.addEventListener("submit", (e) => {
   // const urlInput= e.target.url.value
   async function request() {
     let req = await fetch(
-      `https://api.qrserver.com/v1/create-qr-code/?data=${urlInput.value}&size=250x250`
+      `https://api.qrserver.com/v1/create-qr-code/?data=${urlInput.value}&size=250x250&color=168-169-173`
     );
     //   let resp = await req.json()
     console.log(req);
