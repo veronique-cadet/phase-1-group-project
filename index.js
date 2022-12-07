@@ -26,9 +26,9 @@ function generateWallet(qrCode) {
    deleteButton.id = "delete";
    deleteButton.src = "assets/remove.png";
    deleteButton.addEventListener("click", () => {
-    // fetch(`http://localhost:3000/codes/${qrCode.id}`, {
-    //   method: 'DELETE'
-    // })
+    fetch(`http://localhost:3000/codes/${qrCode.id}`, {
+      method: 'DELETE'
+    })
     walletItem.remove()
     deleteButton.remove()
    })
