@@ -4,11 +4,14 @@ fetch("http://localhost:3000/codes")
 
 const walletDiv = document.getElementById("item-list");
 function generateWallet(qrCode) {
+  const walletItemAndButton = document.createElement("div")
   const walletItem = document.createElement("p");
   walletItem.id = "items";
-  walletDiv.append(walletItem);
+  walletItemAndButton.append(walletItem);
   walletItem.innerText = qrCode.name.toUpperCase();
-
+ 
+ walletItemAndButton.className = "wallet-and-button"
+ walletDiv.append(walletItemAndButton)
   walletItem.addEventListener("mouseover", () => {
     console.log("i worked");
     walletItem.style.color = "white";
@@ -18,10 +21,17 @@ function generateWallet(qrCode) {
     walletItem.style.color = "#4ea3c6";
   });
 
-  // const deleteButton = document.createElement("img");
-  // walletItem.append(deleteButton);
-  // deleteButton.id = "delete";
-  // deleteButton.src = "assets/remove.png";
+   const deleteButton = document.createElement("img");
+   walletItemAndButton.append(deleteButton);
+   deleteButton.id = "delete";
+   deleteButton.src = "assets/remove.png";
+   deleteButton.addEventListener("click", () => {
+    // fetch(`http://localhost:3000/codes/${qrCode.id}`, {
+    //   method: 'DELETE'
+    // })
+    walletItem.remove()
+    deleteButton.remove()
+   })
 
   walletItem.addEventListener("click", () => {
     walletItem.style.color = "white";
