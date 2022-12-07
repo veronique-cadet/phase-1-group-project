@@ -16,7 +16,7 @@ body {
 }
 
 #header-title {
-  color: rgb(92, 171, 173);
+  color: #4ea3c6;
   font-size: 75px;
   display: inline-block;
   justify-self: center;
@@ -35,23 +35,32 @@ body {
   flex-direction: row;
   justify-content: center;
   padding-top: 2rem;
-  padding-bottom: 1rem;
+  padding-bottom: 3rem;
 }
 
 .item-header {
-  padding-top: 3rem;
+  padding-top: rem;
   font-size: 2rem;
   font-weight: bold;
-  text-align: center;
-  padding-bottom: 3rem;
-  color: rgb(92, 171, 173);
+  color: #4ea3c6;
+  margin-bottom: 1rem;
 }
 
-.items {
-  padding-bottom: 1rem;
+#items {
   font-weight: 700;
-  color: rgb(92, 171, 173);
   font-size: 20px;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  border-radius: 0.25rem;
+  background-color: rgb(237, 244, 236);
+  border-style: 1px solid #4ea3c6;
+  color: #4ea3c6;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px,
+    rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px,
+    rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
 }
 #item-list {
   text-align: center;
@@ -63,7 +72,7 @@ body {
   font-weight: bold;
   text-align: center;
   padding-bottom: 1rem;
-  color: rgb(92, 171, 173);
+  color: #4ea3c6;
 }
 
 #image-detail {
@@ -80,8 +89,7 @@ body {
 
 #form-div {
   background-color: rgb(237, 244, 236);
-  color: rgb(92, 171, 173);
-  padding: 2rem;
+  color: #4ea3c6;
   justify-content: center;
 }
 
@@ -91,32 +99,71 @@ body {
   justify-content: center;
 }
 
-#submit {
-  background-color: rgb(92, 171, 173);
-  color: rgb(237, 244, 236);
+/* #submit {
+  background-color: #4ea3c6;
+  color: white;
   border-radius: 12px;
   border: none;
   margin-left: 2rem;
   font-weight: 700;
   font-size: 20px;
-}
+} */
 
-.form-text {
+/* .form-text {
   padding-left: 2rem;
   font-size: 20px;
   font-weight: 700;
   padding-right: 1rem;
-}
+} */
 
 #form-title {
-  padding-bottom: 2.5rem;
   text-align: center;
-  font-size: 2rem;
+  font-size: 1.75rem;
+  padding-top: 2rem;
+}
+
+#form-subtitle {
+  text-align: center;
+  font-size: 1rem;
+  padding-top: 0.5rem;
 }
 
 .mouse {
   font-size: 20px;
-  background: rgb(92, 171, 173);
-  color: white;
+  color: rgb(168, 169, 173);
   text-align: center;
+}
+
+#delete {
+  width: 15px;
+  margin-left: 15px;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 1rem;
+}
+
+input {
+  border: none;
+  background: white(0 0% 93%);
+  border-radius: 0.25rem;
+  padding: 0.75rem 2rem;
+}
+
+#submit {
+  background-color: #4ea3c6;
+  color: white;
+  box-shadow: 0 0.75rem 0.5rem -0.5rem #4ea3c6(0 50% 80%);
+  margin: 2rem;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.input-form {
+  margin: 2rem;
+  font-size: 15px;
+  font-family: Helvetica;
+  color: #4ea3c6;
 }

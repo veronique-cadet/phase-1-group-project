@@ -37,30 +37,44 @@
       <!-- form: bottom of the page, inside a div -->
       <div id="form-div">
         <h3 id="form-title">Create A New Qr Code!</h3>
-        <form id="form">
-          <label class="form-text" for="name">Name: </label>
-          <input type="text" id="name" name="name" placeholder="New Name..." />
+        <!-- <p id="form-subtitle">Pick Type</p> -->
 
-          <label class="form-text" for="url">URL:</label>
+        <form id="form">
+          <label class="form-text" for="name"></label>
           <input
+            class="input-form"
+            type="text"
+            id="name"
+            name="name"
+            placeholder="New Name..."
+          />
+
+          <label class="form-text" for="url"></label>
+          <input
+            class="input-form"
             type="text"
             id="url"
             name="url"
             placeholder="New URL..."
           />
 
-          <label class="form-text" for="description">Description:</label>
+          <label class="form-text" for="description"></label>
           <input
+            class="input-form"
             type="text"
             id="description"
             name="description"
             placeholder="New Description..."
           />
-          <input type="submit" id="submit" name="submit" value="Generate QR Code" />
+          <input
+            type="submit"
+            id="submit"
+            name="submit"
+            value="Generate QR Code"
+          />
         </form>
       </div>
     </main>
-
     <footer></footer>
   </body>
 </html>
