@@ -4,14 +4,14 @@ fetch("http://localhost:3000/codes")
 
 const walletDiv = document.getElementById("item-list");
 function generateWallet(qrCode) {
-  const walletItemAndButton = document.createElement("div")
+  const walletItemAndButton = document.createElement("div");
   const walletItem = document.createElement("p");
   walletItem.id = "items";
   walletItemAndButton.append(walletItem);
   walletItem.innerText = qrCode.name.toUpperCase();
- 
- walletItemAndButton.className = "wallet-and-button"
- walletDiv.append(walletItemAndButton)
+
+  walletItemAndButton.className = "wallet-and-button";
+  walletDiv.append(walletItemAndButton);
   walletItem.addEventListener("mouseover", () => {
     console.log("i worked");
     walletItem.style.color = "white";
@@ -21,17 +21,19 @@ function generateWallet(qrCode) {
     walletItem.style.color = "#4ea3c6";
   });
 
-   const deleteButton = document.createElement("img");
-   walletItemAndButton.append(deleteButton);
-   deleteButton.id = "delete";
-   deleteButton.src = "assets/remove.png";
-   deleteButton.addEventListener("click", () => {
+  const deleteButton = document.createElement("img");
+  walletItemAndButton.append(deleteButton);
+  deleteButton.id = "delete";
+  deleteButton.src = "assets/remove.png";
+  deleteButton.addEventListener("click", () => {
     fetch(`http://localhost:3000/codes/${qrCode.id}`, {
-      method: 'DELETE'
-    })
-    walletItem.remove()
-    deleteButton.remove()
-   })
+      method: "DELETE",
+    });
+    walletItem.remove();
+    deleteButton.remove();
+    itemName.innerText = "";
+    itemImage.src = "./assets/962965.png";
+  });
 
   walletItem.addEventListener("click", () => {
     walletItem.style.color = "white";
@@ -94,6 +96,7 @@ form.addEventListener("submit", (e) => {
     });
     itemName.innerText = nameInput.value;
     generateWallet(newQr);
+    form.reset();
   }
   request();
 });
