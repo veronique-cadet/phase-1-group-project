@@ -31,8 +31,6 @@ function generateWallet(qrCode) {
     });
     walletItem.remove();
     deleteButton.remove();
-    description.remove();
-    url.remove();
     itemName.innerText = "";
     itemImage.src = "./assets/962965.png";
   });
